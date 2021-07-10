@@ -16,6 +16,7 @@ libsasl2-dev
 libssl-dev
 libxmlsec1-dev
 locales-all
+mc
 openssh-server
 postgresql-client
 python3-dev
@@ -25,7 +26,6 @@ python3-venv
 redis
 sudo
 tzdata
-vim
 wkhtmltopdf
 zlib1g-dev
 zsh
