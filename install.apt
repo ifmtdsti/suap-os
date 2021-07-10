@@ -1,5 +1,6 @@
 build-essential
 freetds-dev
+gfortran
 ghostscript
 git
 iputils-ping
@@ -14,15 +15,17 @@ libpq-dev
 libsasl2-dev
 libssl-dev
 libxmlsec1-dev
-locales
+locales-all
 openssh-server
 postgresql-client
 python3-dev
 python3-pip
 python3-setuptools
 python3-venv
+redis
 sudo
 tzdata
+vim
 wkhtmltopdf
 zlib1g-dev
 zsh
