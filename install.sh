@@ -28,4 +28,3 @@ rm -rf /var/tmp/*
 rm -rf /tmp/*
 
 rm -fr /install.apt
-rm -fr /requirements.txt
