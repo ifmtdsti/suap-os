@@ -1,6 +1,6 @@
 NAME := carlosrabelo/suap-os
 
-CURRENT := ${NAME}:20210710
+CURRENT := ${NAME}:$(shell date +%Y%m%d%H%M%S)
 LATEST  := ${NAME}:latest
 
 all:
@@ -17,4 +17,4 @@ build:
 
 push:
 
-	@docker push -a ${NAME}
+	@docker push ${LATEST}
