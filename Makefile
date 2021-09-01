@@ -5,11 +5,11 @@ all:
 
 clean:
 
-	@docker rmi -f ${LATEST}
+	@docker rmi --force ${LATEST}
 
 build:
 
-	@docker build -t ${LATEST} .
+	@docker build --no-cache --compress --tag ${LATEST} .
 
 push:
 

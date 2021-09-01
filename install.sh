@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export DEBIAN_FRONTEND="noninteractive"
-
 export TZ="America/Cuiaba"
 
 apt-get --yes update

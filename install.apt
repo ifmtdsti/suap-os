@@ -1,3 +1,4 @@
+apt-utils
 build-essential
 freetds-dev
 gfortran
