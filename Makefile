@@ -9,7 +9,7 @@ clean:
 
 build:
 
-	@docker build --no-cache --compress --tag ${LATEST} .
+	@docker build --no-cache --force-rm --compress --tag ${LATEST} .
 
 push:
 
