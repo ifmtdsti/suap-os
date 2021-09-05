@@ -1,4 +1,4 @@
-NAME   := carlosrabelo/suap-os
+NAME   := ifmt/suap-os
 LATEST := ${NAME}:latest
 
 all:
