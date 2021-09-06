@@ -4,6 +4,7 @@ freetds-dev
 gfortran
 ghostscript
 git
+htop
 iputils-ping
 libatlas-base-dev
 libblas-dev
@@ -20,6 +21,7 @@ locales
 locales-all
 mc
 postgresql-client
+procps
 python3-dev
 python3-pip
 python3-setuptools
@@ -28,4 +30,8 @@ redis
 sudo
 tzdata
 wkhtmltopdf
+xfonts-100dpi
+xfonts-75dpi
+xfonts-cyrillic
+xfonts-scalable
 zlib1g-dev
