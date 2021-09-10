@@ -1,3 +1,13 @@
+#
+.git/
+.github/
+
+#
+.gitlab-ci.yml
+
+#
 Dockerfile
+
+#
 Makefile
 README.md
