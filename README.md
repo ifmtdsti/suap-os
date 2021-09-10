@@ -1,3 +1,3 @@
-# suap-os
+# SUAP-OS
 
-Imagem do Ubuntu 18.04 para desenvolvimento do SUAP
+Imagem do Debian 11 para desenvolvimento do SUAP
