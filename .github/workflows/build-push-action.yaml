@@ -2,18 +2,24 @@ name: Publish Docker image
 on: [push]
 jobs:
   push_to_registry:
-    name: Push Docker image to Docker Hub
+    name: Push Docker Image
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repo
+      - name: Prep
+        id: prep
+        run: |
+             sha=${GITHUB_SHA::8}
+             ts=$(date +%s)
+             echo "::set-output name=BUILD_ID::${branch}-${sha}-${ts}"
+      - name: Checkout
         uses: actions/checkout@master
-      - name: Log in to Docker Hub
+      - name: Login
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Push to Docker Hub
+      - name: Push
         uses: docker/build-push-action@v2
         with:
-          push: true
-          tags: ifmt/suap-os:latest
+          push: ${{ github.event_name == 'push' }}
+          tags: ifmt/suap-os:latest ifmt/suap-os:${{ steps.prep.outputs.BUILD_ID }}
