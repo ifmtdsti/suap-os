@@ -1,5 +1,6 @@
 apt-utils
 build-essential
+curl
 freetds-dev
 gfortran
 ghostscript
@@ -29,6 +30,7 @@ python3-virtualenv
 redis
 sudo
 tzdata
+wget
 wkhtmltopdf
 xfonts-100dpi
 xfonts-75dpi
