@@ -6,7 +6,8 @@ apt-get --yes update
 
 apt-get --yes --autoremove dist-upgrade
 
-apt-get install --yes --autoremove $(grep -vE "^\s*#" /install.apt | tr "\n" " ")
+apt-get install --yes --autoremove $(grep -vE "^\s*#" /install.1.apt | tr "\n" " ")
+apt-get install --yes --autoremove $(grep -vE "^\s*#" /install.2.apt | tr "\n" " ")
 
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 
@@ -25,4 +26,5 @@ rm -rf /var/lib/apt/lists/*
 rm -rf /var/tmp/*
 rm -rf /tmp/*
 
-rm -fr /install.apt
+rm -fr /install.1.apt
+rm -fr /install.2.apt
