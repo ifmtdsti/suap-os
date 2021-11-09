@@ -1,4 +1,5 @@
 apt-utils
+bash-completion
 curl
 htop
 iputils-ping
