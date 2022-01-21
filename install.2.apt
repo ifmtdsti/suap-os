@@ -1,5 +1,7 @@
 apt-utils
 bash-completion
+chromium
+chromium-driver
 curl
 htop
 iputils-ping
