@@ -2,6 +2,7 @@ apt-utils
 bash-completion
 build-essential
 curl
+freetds-bin
 freetds-dev
 gfortran
 ghostscript
@@ -49,8 +50,11 @@ shared-mime-info
 sudo
 supervisor
 swig
+tdsodbc
 tmpreaper
 tzdata
+unixodbc
+unixodbc-dev
 vim
 wget
 wkhtmltopdf
