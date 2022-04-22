@@ -20,7 +20,7 @@ ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/libz.so
 ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/libjpeg.so
 ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib/libfreetype.so
 
-curl -fsSL https://code-server.dev/install.sh | sh
+# curl -fsSL https://code-server.dev/install.sh | sh
 
 apt-get autoclean clean
 
