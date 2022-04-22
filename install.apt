@@ -1,12 +1,15 @@
 apt-utils
 bash-completion
 build-essential
+chromium
+chromium-driver
 curl
 freetds-bin
 freetds-dev
 gfortran
 ghostscript
 git
+htop
 iputils-ping
 libatlas-base-dev
 libblas-dev
@@ -23,6 +26,7 @@ libldap2-dev
 libpango-1.0-0
 libpangocairo-1.0-0
 libpq-dev
+libreoffice
 libsasl2-dev
 libsm6
 libssl-dev
@@ -32,6 +36,8 @@ libxmlsec1-dev
 libxslt1-dev
 locales
 locales-all
+mc
+nginx
 ntpdate
 openssh-server
 poppler-utils
