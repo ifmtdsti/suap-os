@@ -13,13 +13,10 @@ ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 echo $TZ > /etc/timezone
 
 update-alternatives --install /usr/bin/python python /usr/bin/python3 0
-update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 0
 
 ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/libz.so
 ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/libjpeg.so
 ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib/libfreetype.so
-
-curl -fsSL https://code-server.dev/install.sh | sh
 
 apt-get --yes autoclean clean
 
