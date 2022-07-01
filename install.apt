@@ -37,6 +37,7 @@ libxslt1-dev
 locales
 locales-all
 mc
+nano
 nginx
 ntpdate
 openssh-server
