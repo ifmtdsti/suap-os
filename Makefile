@@ -1,14 +1,13 @@
 NAME := ifmt/suap-os
 
-PAK1 := ${NAME}:`date +\%Y\%m\%d`
-PAK2 := ${NAME}:latest
+REF := $(shell git symbolic-ref --short HEAD)
+SHA := $(shell git rev-parse --short=8 HEAD)
+TS  := $(shell date +%s)
+
+PAK1 := ${NAME}:latest
+PAK2 := ${NAME}:${REF}-${SHA}-${TS}
 
 all:
-
-clean:
-
-	@docker rmi --force ${PAK1}
-	@docker rmi --force ${PAK2}
 
 build:
 
