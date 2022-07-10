@@ -3,6 +3,7 @@ bash-completion
 build-essential
 chromium
 chromium-driver
+cron
 curl
 freetds-bin
 freetds-dev
