@@ -6,13 +6,13 @@ TS  := $(shell date +%s)
 
 PAK1 := ${NAME}:latest
 PAK2 := ${NAME}:${REF}-${SHA}-${TS}
-PAK3 := gitlab.ifmt.edu.br:5005/csn/suap
+PAK3 := gitlab.ifmt.edu.br:5005/csn/suap-os:latest
 
 all:
 
 build:
 
-	@docker build --no-cache --force-rm --compress --tag ${PAK1} --tag ${PAK2} --tag ${PAK3} .
+	@docker build --no-cache --force-rm --compress --tag ${PAK1} --tag ${PAK2} .
 
 push:
 
@@ -21,4 +21,6 @@ push:
 
 push-local:
 
+	@docker tag ${PAK3} ${PAK1}
 	@docker push ${PAK3}
+	@docker rmi ${PAK3}
